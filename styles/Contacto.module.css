@@ -1,0 +1,57 @@
+.contacto {
+    display: grid;
+    gap: 4rem;
+}
+@media (min-width: 768px) {
+    .contacto {
+        grid-template-columns: 2fr 3fr;
+    }
+}
+@media (min-width: 992px) {
+    .contacto {
+        grid-template-columns: 2fr 3fr;
+    }
+}
+.datosCard {
+    padding: 10px 20px;
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.55);
+    background-color: #fff;
+}
+
+.datosCard p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.datosCard p i {
+    margin-right: 10px;
+    font-size: 3rem;
+    color: var(--primary);
+}
+.form {
+    padding: 10px 20px;
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.55);
+    background-color: #fff;
+}
+.campos {
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+}
+.campos label {
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+}
+.campos input,
+.campos textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+}

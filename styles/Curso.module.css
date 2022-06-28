@@ -1,0 +1,44 @@
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        padding: 2rem;
+    }
+}
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .contenido {
+        grid-column: 2 / 3;
+    }
+}
+.descripcion {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+.enlace {
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    background: var(--primary);
+    border: none;
+    color: var(--blanco);
+    text-decoration: none;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.enlace:hover {
+    border: none;
+    color: var(--primary);
+    background-color: var(--negro);
+}
